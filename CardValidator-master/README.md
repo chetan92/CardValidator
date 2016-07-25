@@ -9,8 +9,7 @@ To import the module add the following to your python file:
 #### Luhn (Generator and Validator)
     from cardvalidator import luhn
 #### Formatter
-    from cardvalidator.formatter import Formatter
-    formatter = Formatter()
+    from cardvalidator import formatter
 
 ### Validator
 The validator can be used to validate  cards and calculate the Luhn check digit for a given number.
@@ -36,8 +35,18 @@ To generate a valid  card number:
 This method will return a valid  card number as a string.
 
 ### Formatter
-To check whether a number matches the format of a specified type of  card use the following methods:
+To check whether a number matches the format of a specified type of card use the following methods:
 
+    formatter.is_visa(number)
+
+This method will return a boolean value based on the card type match.
+
+To generate the possible card type (s) for given card number :
+
+    formatter.get_format(number)
+    
+This method will return the list of card types if the card number match with any card format.
+    
 The following card number formats can be detected:
 
 + visa
