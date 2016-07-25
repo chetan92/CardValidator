@@ -12,7 +12,7 @@ setup(
     description=short_description,
     license='MIT',
     keywords='credit debit card generate validate numbers',
-    url='',
+    url='https://github.com/chetan92/CardValidator.git',
     packages=['cardvalidator', 'tests'],
     classifiers=[
         'Topic :: Utilities',
