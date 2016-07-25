@@ -1,6 +1,6 @@
 # CardValidator
 
-CreditCard is a Python 2 or 3 module which can validate, generate and determine the format of credit card numbers using the Luhn algorithm.
+CardValidator is a Python 2 or 3 module which can validate, generate and determine the format of  card numbers using the Luhn algorithm.
 
 ## Getting Started
 
@@ -13,30 +13,30 @@ To import the module add the following to your python file:
     formatter = Formatter()
 
 ### Validator
-The validator can be used to validate credit cards and calculate the Luhn check digit for a given number.
+The validator can be used to validate  cards and calculate the Luhn check digit for a given number.
 
 #### Validate
-To validate a credit card number:
+To validate a  card number:
 
     luhn.is_valid(number)
 
-`number` is a string or integer which is the credit card number.
+`number` is a string or integer which is the  card number.
 
 To calculate the Luhn check digit for a particular number:
 
     luhn.calculate_check_digit(number)
 
-Again, `number` is a string or integer. For this method, however, it is a partial credit card number. This method will return the check digit, which is the last digit of the card number, as an integer.
+Again, `number` is a string or integer. For this method, however, it is a partial  card number. This method will return the check digit, which is the last digit of the card number, as an integer.
 
 ### Generator
-To generate a valid credit card number:
+To generate a valid  card number:
 
     luhn.generate(length)
 
-This method will return a valid credit card number as a string.
+This method will return a valid  card number as a string.
 
 ### Formatter
-To check whether a number matches the format of a specified type of credit card use the following methods:
+To check whether a number matches the format of a specified type of  card use the following methods:
 
 The following card number formats can be detected:
 
@@ -60,9 +60,9 @@ The following card number formats can be detected:
 + switch
 + VPAY
 + elo
-+korean local card
++ korean local card
 + carte blanche
-+bcglobal
++ bcglobal
 
 A card number can be checked to be in one of these formats by using the method `formatter.is_format(number)`, where format is the format you are checking.
 
