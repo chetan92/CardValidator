@@ -1,9 +1,17 @@
-# CardValidator
+# Card-Validator
 
-CardValidator is a Python 2 or 3 module which can validate, generate and determine the format of  card numbers using the Luhn algorithm.
+Card-Validator is a Python 2 or 3 module which can validate, generate and determine the format of  card numbers using the Luhn algorithm.
 
 ## Getting Started
 
+To install Card-Validator in your environment you may use pip command:-
+
+    pip install Card-Validator
+
+You may also upgrade to the latest version using :-
+    
+    pip install --upgrade Card-Validator
+    
 To import the module add the following to your python file:
 
 #### Luhn (Generator and Validator)
