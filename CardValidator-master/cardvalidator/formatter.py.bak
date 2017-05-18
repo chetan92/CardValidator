@@ -284,4 +284,4 @@ def get_format(n):
 
 def strings_between(a, b):
     """Generates a list of strings between a and b."""
-    return list(map(str, list(range(a, b))))
+    return list(map(str, range(a, b)))
